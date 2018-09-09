@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Advices</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_header">Your current advice is…</string>
+    <string name="not_found">Advice not found</string>
+    <string name="next_advice_button">Get next advice!</string>
+    <string name="favourite">Add as favourite!</string>
+    <string name="favourites_default_text">These are your favourite advices...</string>
+    <string name="show_favourites">Show my favourite advices</string>
+</resources>

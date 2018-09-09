@@ -1,0 +1,39 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "da7c4937974f46d0bee5be20fb75b292",
+    "entities": [
+      {
+        "tableName": "Advice",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`slip_id` INTEGER NOT NULL, `advice` TEXT NOT NULL, PRIMARY KEY(`slip_id`))",
+        "fields": [
+          {
+            "fieldPath": "slip_id",
+            "columnName": "slip_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "advice",
+            "columnName": "advice",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "slip_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"da7c4937974f46d0bee5be20fb75b292\")"
+    ]
+  }
+}
